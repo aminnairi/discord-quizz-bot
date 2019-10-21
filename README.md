@@ -19,6 +19,5 @@ $ cd discord-bot-quizz
 
 `make` | `docker-compose` | Description
 ---|---|---
-`make install` | `docker-compose run --rm npm install` | Dependencies installation
 `make start` | `docker-compose run --rm npm start` | Bot startup
 `make clean` | `docker-compose run --rm sh rm -rf node_modules` | Environment cleaning
