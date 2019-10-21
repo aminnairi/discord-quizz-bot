@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "quizz",
+  "version": "0.1.0",
+  "description": "Quizz bot",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminnairi/quizz.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "quizz",
+    "bot"
+  ],
+  "author": "Amin NAIRI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aminnairi/quizz/issues"
+  },
+  "homepage": "https://github.com/aminnairi/quizz#readme",
+  "devDependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0"
+  }
+}

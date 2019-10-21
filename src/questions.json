@@ -1,0 +1,139 @@
+[
+    {
+        "text": "Combien y-a-til de manière de déclarer une variable ?",
+        "answers": [
+            "3",
+            "trois"
+        ],
+        "explanation": "Il existe trois manières de déclarer une variable : avec le mot-clé `var`, `let` et `const`. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Types_et_grammaire#D%C3%A9clarations"
+    },
+    {
+        "text": "Quel est l'inventeur du langage JavaScript ?",
+        "answers": [
+            "Brendan Eich"
+        ],
+        "explanation": "Le langage JavaScript a été inventé par Brendan Eich, co-fondateur du projet Mozilla, de la Mozilla Foundation et de la Mozilla Corporation. Plus d'info ici https://developer.mozilla.org/fr/docs/Apprendre/Commencer_avec_le_web/Les_bases_JavaScript"
+    },
+    {
+        "text": "Est-ce que l'interpréteur JavaScript peut insérer des point-virgules pour moi lors de l'interprétation de mon code ?",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "En JavaScript, il existe un mécanisme appellé ASI — pour **A**utomatic **S**emicolon **I**nsertion — et qui permet d'insérer des points-virgules pour nous dans le code interprété selon certains critères. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Grammaire_lexicale#Insertion_automatique_de_points-virgules"
+    },
+
+    {
+        "text": "Est-ce que le nom de variable suivant est un nom de variable valide en JavaScript ? `const answer' = 42`",
+        "answers": [
+            "non"
+        ],
+        "explanation": "Les variable en JavaScript suivent les mêmes règles que tous les identifieurs JavaScript qui doivent suivre des règles de nommage précises. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Types_et_grammaire#Variables"
+    },
+    {
+        "text": "Est-ce que les commentaires en JavaScript peuvent commencer par un dièse (`#`) ?",
+        "answers": [
+            "non"
+        ],
+        "explanation": "Les commentaires en JavaScript suivent les mêmes règles qu'en langage C. Plus d'infos ici https://developer.mozilla.org/fr/docs/Apprendre/Commencer_avec_le_web/Les_bases_JavaScript#Commentaires"
+    },
+    {
+        "text": "Est-ce que l'opérateur `**` existe en JavaScript ?",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "L'opérateur `**` est un opérateur d'exponentiation et l'équivalent à `Math.pow()` qui permet d'élever une variable à une puissance donnée. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Opérateurs/Opérateurs_arithmétiques#Exponentiation"
+    },
+    {
+        "text": "Est-ce la syntaxe suivante est correcte en JavaScript ?\n```javascript\n\"use strict\";\n\nconst languages = [ , , \"javascript\", , \"php\" ];\n```",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "Il est possible d'avoir plusieurs virgules à la suite pour avoir des cases d'un tableau non-définies. Cependant, pour des raisons de lisibilité, il est recommandé d'utiliser le mot-clé `undefined` à la place. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Types_et_grammaire#Les_virgules_suppl%C3%A9mentaires"
+    },
+    {
+        "text": "Combien de type de boucles existe-t-il en JavaScript ?",
+        "answers": [
+            "cinq",
+            "5"
+        ],
+        "explanation": "Il existe cinq types de boucles différents en JavaScript : `for`, `for...in`, `for...of`, `while` & `do...while`. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Boucles_et_it%C3%A9ration"
+    },
+    {
+        "text": "Est-il possible de compter le nombre d'arguments d'une fonction en JavaScript ?",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "Il est tout à fait possible de compter le nombre d'arguments d'une fonction en JavaScript en utilisant le mot-clé `arguments` à l'intérieur de la définition d'une fonction. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Fonctions/arguments"
+    },
+    {
+        "text": "Est-il possible d'avoir des types d'erreurs customisés en JavaScript ?",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "Il est tout à fait possible d'avoir des types d'erreurs, en plus des types par défaut comme `RangeError`, `TypeError` ou encore `EvalError`. Ces types d'erreurs personnalisés vont étendre des fonctionnalités proposées par l'erreur `Error` en JavaScript. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Error#Types_derreur_personnalisés"
+    },
+    {
+        "text": "Quel est le résultat du code suivant\n```javascript\n[1, 2, 3].reduce((xs, x) => xs + x) // ?\n```",
+        "answers": [
+            "6",
+            "six"
+        ],
+        "explanation": "Le code suivant revient à faire la somme de tous les éléments d'un tableau. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/reduce"
+    },
+    {
+        "text": "Quel est le résultat du code suivant\n```javascript\n[1, 2, 3].reduce((xs, x) => xs + x, '') // ?\n```",
+        "answers": [
+            "123"
+        ],
+        "explanation": "Le code suivant revient à faire la concatenation de tous les éléments d'un tableau. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/reduce"
+    },
+    {
+        "text": "Que renvoit le code suivant\n```javascript\n\"use strict\";\n\nconst brands = [];\n\nbrand[30] = \"Triumph\";\n\nconsole.log(brands.length); // ?\n```",
+        "answers": [
+            "31"
+        ],
+        "explanation": "La propriété `Array.prototype.length` est particulière car elle ne renvoit pas la taille réelle d'une tableau mais plutôt l'indice du plus grand élément d'un tableau plus un. Pour avoir sa taille rélle, l'astuce est de filtrer les éléments non-définis (`undefined`) et de calculer la taille du tableau ainsi filtré.\n```javascript\nconsole.log(brands.filter(Boolean).length); // 1\n```\n Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Collections_indexées#Comprendre_la_propriété_length"
+    },
+    {
+        "text": "Est-ce qu'il est possible d'avoir des données privées à un objet (ou une instance de classe) ?",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "Depuis ECMAScript 2015, il est possible d'utiliser un objet `Symbol` qui permet d'avoir des références uniques, donc impossible à utiliser en dehors de l'implémentation. On peut aussi utiliser un objet `WeakMap`. En clair, il existe plusieurs manière de contourner ce problème dans un langage orienté prototypes. C'est l'équivalent du mot-clé `private` dans certains langages de programmation orientés objets. Plus d'infos sur cet article écrit par Nick Fitzgerald ici https://fitzgeraldnick.com/2014/01/13/hiding-implementation-details-with-e6-weakmaps.html"
+    },
+    {
+        "text": "Que renvoit le code suivant\n```javascript\n\"use strict\";\n\n\nconst motorcycle1 = { brand: \"Triumph\" };\nconst motorcycle2 = { brand: \"Triumph\" };\n\nconsole.log(motorcycle1 === motorcycle2); // ?\n```",
+        "answers": [
+            "false"
+        ],
+        "explanation": "L'opérateur d'égalité entre deux objets ne compare pas le contenus des objets mais leur références. Tout objet, lorsqu'il est créé obtient une référence unique. La seule manière de faire marcher ce code est d'affecter à `motorcycle2` la référence de `motorcycle1` comme cela\n```javascript\nconst motorcycle2 = motorcycle1;\n```\nPlus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_objets#Comparer_des_objets"
+    },
+    {
+        "text": "Est-ce que Les promesses — ou *promises* en anglais — permettent de supprimer toutes les erreurs liées à l'éxécution d'une fonction ou d'une expression ?",
+        "answers": [
+            "non"
+        ],
+        "explanation": "Une promesse permet de différer l'exécution d'un code. Elle peut se résoudre — en cas de succès — ou échouer. Mais elle ne permet pas de supprimer ou de rendre silencieuses les erreurs et il faut toujours prévoir le cas d'erreur, que ce soit pour une promesse ou autre chose. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_promesses"
+    },
+    {
+        "text": "Est-ce que le code suivant est correct\n```javascript\n\"use strict\";\n\nconsole.log(Math.random(0, 10));\n```",
+        "answers": [
+            "non"
+        ],
+        "explanation": "La méthode `random` de l'objet `Math` renvoit un nombre entre `0` et `1`. Pour obtenir un nombre entre `0` et `10`, il aurait fallu écrit le code suivant\n```javascript\n\"use strict\";\n\nconsole.log(Math.random() * 10);\n```\nPlus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Math/random"
+    },
+    {
+        "text": "Que renvoit le code suivant\n```javascript\n\"use strict\";\n\nconsole.log(!!\"true\" === !!\"false\");\n```",
+        "answers": [
+            "true"
+        ],
+        "explanation": "Aussi bizarre que cela puisse paraître, une chaîne de caractère est considéré comme vrai ou `true` — sauf pour une chaîne de caractère vide `\"\"` qui est considéré comme faux ou `false`. Plus d'infos ici https://developer.mozilla.org/fr/docs/Glossaire/Falsy et ici https://developer.mozilla.org/fr/docs/Glossaire/Truthy"
+    },
+    {
+        "text": "Est-ce que le code suivant est correct\n```javascript\n\"use strict\"\n\n<!-- on vérifie que 1 et 1 font 2 -->\n\nconsole.log(1 + 1 === 2);\n```",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "Et oui ! On peut mettre des commentaires HTML en JavaScript ! Et il font partie de la spécification ECMAScript depuis l'époque des navigateurs comme Netscape qui ne supportait pas encore la balise `<script>`. Plus d'infos ici (attention, long document, spécification complète) https://www.ecma-international.org/ecma-262/#sec-html-like-comments"
+    }
+]
