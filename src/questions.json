@@ -135,5 +135,75 @@
             "oui"
         ],
         "explanation": "Et oui ! On peut mettre des commentaires HTML en JavaScript ! Et il font partie de la spécification ECMAScript depuis l'époque des navigateurs comme Netscape qui ne supportait pas encore la balise `<script>`. Plus d'infos ici (attention, long document, spécification complète) https://www.ecma-international.org/ecma-262/#sec-html-like-comments"
+    },
+    {
+        "text": "Est-ce que la balise suivante existe en HTML ?\n```html\n<address>\n```",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "La balise `<address>` permet d'indiquer de façon sémantique des informations sur une personne physique ou morale ou un ensemble de ces derniers. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/address"
+    },
+    {
+        "text": "Est-ce que la balise suivante existe en HTML ?\n```html\n<wbr>\n```",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "La balise `<wbr>` permet d'indiquer un endroit où casser un mot si un mot devait être cassé, par exemple dans le cas d'un design responsive. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/wbr"
+    },
+    {
+        "text": "Est-ce que la balise suivante existe en HTML ?\n```html\n<javascript>\n```",
+        "answers": [
+            "non"
+        ],
+        "explanation": "Il n'existe pas de balise `<javascript>` en HTML. Pour pouvoir utiliser du JavaScript, il faut utiliser la balise `<script>`. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/script"
+    },
+    {
+        "text": "Est-ce que la balise suivante existe en HTML ?\n```html\n<template>\n```",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "Même si elle est utilisé par des frameworks comme Vue, cette balise existe belle et bien et permet de définir du contenu HTML qui ne sera pas rendu par le navigateur mais généralement réutilisé par la suite en JavaScript pour créer du marquage HTML facilement réutilisable. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/template"
+    },
+    {
+        "text": "Le concept de DOM virtuel est un concept lié aux framework JavaScript comme React, Angular ou Vue est n'existe pas en HTML.",
+        "answers": [
+            "faux"
+        ],
+        "explanation": "Même si le concept de DOM virtuel est lié à la plupart des frameworks JavaScript, ce concept existe bel et bien et est utilisé pour créer des Web Components, des composants HTML standards dedans lesquels il est possible d'encapsuler du HTML, CSS & JavaScript et de le rendre portable (haute portabilité et réutilisabilité). Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/Web_Components/Using_shadow_DOM"
+    },
+    {
+        "text": "Il n'y a pas besoin de concevoir from scratch un color picker car il existe un élément HTML qui permet d'afficher un color picker à l'utilisateur.",
+        "answers": [
+            "vrai"
+        ],
+        "explanation": "Aussi dingue que cela puisse paraître, il existe bel et bien un élément HTML qui permet d'offrir à l'utilisateur un color picker sans avoir besoin de le concevoir nous-mêmes (il est quand même bon de noter que ce dernier est assez sommaire en terme de fonctionnalités). Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/color"
+    },
+    {
+        "text": "Je suis obligé de passer par un framework si je veux une liste déroulante composées d'entrées groupées par thèmes.",
+        "answers": [
+            "faux"
+        ],
+        "explanation": "Il est possible d'utiliser la balise `<optgroup>` pour grouper plusieurs éléments logiques entre-eux dans une liste déroulante (`<select>`). Cela peut se révéler très pratique et ne nécessite pas de passer par un framework ou d'utiliser des balises non-sémantiques particulières. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/Optgroup"
+    },
+    {
+        "text": "En HTML, il existe une balise `<script>` qui permet d'utiliser le JavaScript mais il existe aussi une balise `<noscript>` qui de détecter dynamiquement si le JavaScript est désactivé sur une page HTML.",
+        "answers": [
+            "vrai"
+        ],
+        "explanation": "Non seulement cette balise existe et est souvent utilisée pour afficher un message à l'utilisateur lorsque celui-ci a décidé de désactiver l'exécution de scripts sur sa page, mais c'est également un des critères de l'outil d'audit de site disponible sur l'outil de test de site Web de Google qui recommande d'utiliser cette balise lorsque l'on décide d'utiliser un système de Service Workers. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/noscript"
+    },
+    {
+        "text": "JSX est un langage de marquage issue de la rencontre entre le JavaScript et l'XML et qui permet de remplacer complètement le langage HTML.",
+        "answers": [
+            "faux"
+        ],
+        "explanation": "Le JSX — **J**ava**S**cript and **X**ML — est un langage de marquage qui s'utilise dans des scripts, mais n'a pas pour vocation de remplacer complètement les documents HTML puisqu'il nécessite le langage JavaScript pour exister. Plus d'infos ici https://fr.reactjs.org/docs/introducing-jsx.html"
+    },
+    {
+        "text": "En HTML, si j'oublie la déclaration `<DOCTYPE html>` au début de mon document, le navigateur pensera que mon site est écrit pour Internet Explorer 9 et inférieur et entrera dans un mode spécial d'interpétation du HTML.",
+        "answers": [
+            "vrai"
+        ],
+        "explanation": "Le DOCTYPE est un élément important d'une page HTML puisqu'il permet de donner au navigateur l'assurance que notre marquage est écrit pour être compatible selon le standard HTML. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Quirks_Mode_and_Standards_Mode"
     }
 ]
