@@ -2,77 +2,19 @@
 
 Quizz bot
 
-## Requirements
-
-- [Docker][Docker]
-- [Docker Compose][Docker Compose]
-- [GNU/Make][GNU/Make] (optional, should be installed on most GNU/Linux & Mac OS X)
-
-## Installation
-
-```console
-$ git clone https://github.com/aminnairi/discord-bot-quizz.git
-$ cd discord-bot-quizz
-```
-
 ## Commands
 
-*Notes: [GNU/Make][GNU/Make] requires [Docker][Docker] & [Docker Compose][Docker Compose]*
+Command | Description
+---|---
+`!help` | Display a list of available commands.
+`!quizz` | Start (or reset) a question.
+`!scores` | Displays the scores.
+`!reset` | Reset the scores.
+`!issue` | Display a link to this GitHub's issue page.
+`!contribute` | Display a link to the contribution guideline.
+`!stop` | Stop the current question (only available when a question is asked).
+`!ff` | Give up and display the answer (only available when a question is asked).
 
-### Environment setup
+## Contributions
 
-#### Docker Compose
-
-```console
-$ docker-compose run --rm sh cp .env.example .env
-```
-
-#### GNU/Make
-
-```console
-$ make env
-```
-
-### Node.js dependencies installation
-
-#### [Docker Compose][Docker Compose]
-
-```console
-$ docker-compose run --rm npm install
-```
-
-#### [GNU/Make][GNU/Make]
-
-Automatic installation if the `node_modules` folder does not exist.
-
-### Bot startup
-
-#### [Docker Compose][Docker Compose]
-
-```console
-$ docker-compose run --rm npm start
-```
-
-#### [GNU/Make][GNU/Make]
-
-```console
-$ make start
-```
-
-### Environment cleaning
-
-#### [Docker Compose][Docker Compose]
-
-```console
-$ docker-compose run --rm sh rm -rf node_modules
-```
-
-#### [GNU/Make][GNU/Make]
-
-```console
-$ make clean
-```
-
-[Docker]: https://www.docker.com/
-[Docker Compose]: https://docs.docker.com/compose/
-[GNU/Make]: https://www.gnu.org/software/make/
+Pull requests are welcome, whether it is an enhancement of the source-code itself or to add more questions to the already existing [`./src/questions.json`](./src/questions.json) file. See [here](./CONTRIBUTING.md).
