@@ -212,5 +212,20 @@
             "Programming Home Pages"
         ],
         "explanation": "Le langage PHP a été créé en 1994 par Rasmus Lerdorf pour son site web. C'était à l'origine une bibliothèque logicielle en C8 dont il se servait pour conserver une trace des visiteurs qui venaient consulter son CV. Au fur et à mesure qu'il ajoutait de nouvelles fonctionnalités, Rasmus a transformé la bibliothèque en une implémentation capable de communiquer avec des bases de données et de créer des applications dynamiques et simples pour le Web. Rasmus a alors décidé, en 1995, de publier son code, pour que tout le monde puisse l'utiliser et en profiter. PHP s'appelait alors PHP/FI (pour Personal Home Page Tools/Form Interpreter). En 1997, deux étudiants, Andi Gutmans et Zeev Suraski, ont redéveloppé le cœur de PHP/FI. Ce travail a abouti un an plus tard à la version 3 de PHP, devenu alors PHP: Hypertext Preprocessor. Peu de temps après, Andi Gutmans et Zeev Suraski ont commencé la réécriture du moteur interne de PHP. C’est ce nouveau moteur, appelé Zend Engine — le mot Zend est la contraction de Zeev et Andi — qui a servi de base à la version 4 de PHP"
+    },
+    {
+        "text": "Que renvoit ce code en PHP\n```php\n<?php\n\ndeclare(use_strict=1);\n\n[$a, $a] = [1, 2, 3, 4];\n\necho $a; // ?\n```",
+        "answers": [
+            "2",
+            "deux"
+        ],
+        "explanation": "En PHP, il est possible de déconstruire un tableau comme en JavaScript pour ne récupérer que tout ou partie de ce tableau. Lorsqu'une variable existe est réaffecter, elle voit sa valeur précédente écrasée par la nouvelle. Plus d'infos ici https://www.php.net/manual/fr/language.operators.assignment.php et ici https://www.php.net/manual/fr/migration71.new-features.php"
+    },
+    {
+        "text": "Que renvoit ce code en PHP\n```php\n<?php\n\ndeclare(use_strict=1);\n\nconst NUMBERS = [1.1, 2.2, 3.3];\n\nif (in_array(\"1.10\", NUMBERS)) {\n    echo \"oui\";\nelse {\n    echo \"non\";\n}\n```",
+        "answers": [
+            "oui"
+        ],
+        "explanation": "La fonction `in_array` revient à utiliser une boucle for pour itérer sur tous les éléments du tableau et de les comparer à notre paramètre de recherche. En PHP il est possible de comparer deux éléments de types différents mais de valeurs similaires. Plus d'infos ici https://www.php.net/manual/fr/language.operators.comparison.php"
     }
 ]
