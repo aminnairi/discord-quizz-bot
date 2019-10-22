@@ -19,6 +19,20 @@ $ cd discord-bot-quizz
 
 *Notes: [GNU/Make][GNU/Make] requires [Docker][Docker] & [Docker Compose][Docker Compose]*
 
+### Environment setup
+
+#### Docker Compose
+
+```console
+$ docker-compose run --rm sh cp .env.example .env
+```
+
+#### GNU/Make
+
+```console
+$ make env
+```
+
 ### Node.js dependencies installation
 
 #### [Docker Compose][Docker Compose]

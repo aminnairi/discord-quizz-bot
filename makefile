@@ -1,4 +1,7 @@
-.PHONY: start clean
+.PHONY: env start clean
+
+env:
+	docker-compose run --rm sh cp .env.example .env
 
 node_modules:
 	docker-compose run --rm npm install
