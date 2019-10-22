@@ -205,7 +205,7 @@
             "vrai"
         ],
         "explanation": "Le DOCTYPE est un élément important d'une page HTML puisqu'il permet de donner au navigateur l'assurance que notre marquage est écrit pour être compatible selon le standard HTML. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Quirks_Mode_and_Standards_Mode"
-    }
+    },
     {
         "text": "Que signifie PHP ?",
         "answers": [

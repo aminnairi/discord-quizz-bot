@@ -80,7 +80,7 @@ class Question {
 
     isAnswer(guess) {
         return this.answers.some(function(answer) {
-            return guess === answer.toLowerCase();
+            return guess.toLowerCase().trim() === answer.toLowerCase().trim();
         });
     }
 
