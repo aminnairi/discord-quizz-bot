@@ -56,9 +56,11 @@ client.on("message", function(message) {
             }
 
             if (message.content === "!reset") {
+                if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => rname === "Moderateur")){
                 scores.reset();
                 message.replay("Bien reçu. Je viens de réinitialiser les scores de tout le monde !");
-                return;
+                return;   
+                }
             }
         } else {
             if (message.content === "!quizz") {
