@@ -227,5 +227,12 @@
             "oui"
         ],
         "explanation": "La fonction `in_array` revient à utiliser une boucle for pour itérer sur tous les éléments du tableau et de les comparer à notre paramètre de recherche. En PHP il est possible de comparer deux éléments de types différents mais de valeurs similaires. Plus d'infos ici https://www.php.net/manual/fr/language.operators.comparison.php"
+    },
+    {
+        "text": "Quelle fonction permet d'envoyer des en-têtes HTTP au navigateur avant le contenu de la page ?",
+        "answers": [
+            "header"
+        ],
+        "explanation": "header() permet de spécifier l'en-tête HTTP string lors de l'envoi des fichiers HTML. Reportez-vous à » HTTP/1.1 Specification pour plus d'informations sur les en-têtes HTTP."
     }
 ]
