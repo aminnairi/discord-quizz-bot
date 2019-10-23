@@ -235,6 +235,7 @@
         ],
         "explanation": "time() retourne l'heure courante, mesurée en secondes depuis le début de l'époque UNIX, (1er janvier 1970 00:00:00 GMT)."
     },
+    {
         "text": "Quelle fonction permet d'envoyer des en-têtes HTTP au navigateur avant le contenu de la page ?",
         "answers": [
             "header"
