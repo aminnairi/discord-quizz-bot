@@ -17,6 +17,20 @@ $ cd discord-bot-quizz
 
 *Notes: [GNU/Make][GNU/Make] requires [Docker][Docker] & [Docker Compose][Docker Compose]*
 
+### Build containers
+
+#### [Docker Compose][Docker Compose]
+
+```console
+$ docker-compose build
+```
+
+#### [GNU/Make][GNU/Make]
+
+```console
+$ make build
+```
+
 ### Environment setup
 
 #### Docker Compose
@@ -57,12 +71,12 @@ $ docker-compose run --rm npm start
 $ make start
 ```
 
-### Environment cleaning
+### Clean
 
 #### [Docker Compose][Docker Compose]
 
 ```console
-$ docker-compose run --rm sh rm -rf node_modules .env
+$ docker-compose run --rm sh rm -rf node_modules
 ```
 
 #### [GNU/Make][GNU/Make]
@@ -74,3 +88,18 @@ $ make clean
 [Docker]: https://www.docker.com/
 [Docker Compose]: https://docs.docker.com/compose/
 [GNU/Make]: https://www.gnu.org/software/make/
+
+### Deep clean
+
+#### [Docker Compose][Docker Compose]
+
+```console
+$ docker-compose run --rm sh rm -rf node_modules .env
+$ docker-compose down --rmi all --remove-orphans --volumes
+```
+
+#### [GNU/Make][GNU/Make]
+
+```console
+$ make mrproper
+```

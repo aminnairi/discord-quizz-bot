@@ -1,16 +1,18 @@
 version: "3"
 
 services:
-  npm:
-    image: node
-    user: node
-    working_dir: /home/node/app
-    entrypoint: npm
-    volumes:
-      - .:/home/node/app
+    npm:
+        container_name: npm
+        build:
+            context: docker/npm
+            dockerfile: Dockerfile
+        volumes:
+            - .:/home/user/app
 
-  sh:
-    image: alpine
-    working_dir: /home/node/app
-    volumes:
-      - .:/home/node/app
+    sh:
+        container_name: npm
+        build:
+            context: docker/sh
+            dockerfile: Dockerfile
+        volumes:
+            - .:/home/user/app
