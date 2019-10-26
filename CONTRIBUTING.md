@@ -57,6 +57,20 @@ $ docker-compose run --rm npm install
 
 Automatic installation if the `node_modules` folder does not exist.
 
+### Main script build
+
+#### [Docker Compose][Docker Compose]
+
+```console
+$ docker-compose run --rm npm run build
+```
+
+#### [GNU/Make][GNU/Make]
+
+```console
+$ make build
+```
+
 ### Bot startup
 
 #### [Docker Compose][Docker Compose]

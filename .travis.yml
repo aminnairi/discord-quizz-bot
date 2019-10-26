@@ -4,10 +4,15 @@ node_js:
   - "stable"
 
 git:
+  branches:
+    only:
+      - latest
   submodules: false
+  depth: 1
 
 install:
   - npm ci
 
 script:
   - npm test
+  - npm run build

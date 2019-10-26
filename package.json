@@ -6,7 +6,8 @@
   "main": "./src/main.js",
   "scripts": {
     "test": "eslint src/**/*.js src/**/*.json",
-    "start": "node ./src/main.js"
+    "build": "rollup -c",
+    "start": "node ./dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,17 @@
     "url": "https://github.com/aminnairi/quizz/issues"
   },
   "homepage": "https://github.com/aminnairi/quizz#readme",
-  "devDependencies": {
+  "dependencies": {
     "discord.js": "^11.5.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
     "eslint": "^6.6.0",
-    "eslint-plugin-json": "^2.0.1"
+    "eslint-plugin-json": "^2.0.1",
+    "rollup": "^1.25.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
   }
 }
