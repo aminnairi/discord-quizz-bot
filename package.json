@@ -5,7 +5,7 @@
   "description": "Quizz bot",
   "main": "./src/main.js",
   "scripts": {
-    "test": "eslint src",
+    "test": "eslint src/**/*.js src/**/*.json",
     "start": "node ./src/main.js"
   },
   "repository": {
@@ -27,6 +27,7 @@
   "devDependencies": {
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
-    "eslint": "^6.6.0"
+    "eslint": "^6.6.0",
+    "eslint-plugin-json": "^2.0.1"
   }
 }
