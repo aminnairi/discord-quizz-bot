@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --update nodejs
+RUN apk add --update nodejs npm
 RUN addgroup -g 1000 -S user
 RUN adduser -h /home/user -g "" -s /bin/sh -G user -S -D -u 1000 user
 
