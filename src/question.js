@@ -53,7 +53,6 @@ class Question {
         }
 
         if (Object.prototype.toString.call(text) !== "[object String]") {
-            console.log(Object.prototype.toString.call(options.text));
             throw new QuestionTextTypeError("The text field must be a string.");
         }
 

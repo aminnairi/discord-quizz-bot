@@ -24,7 +24,7 @@ class Scores {
 
         return scores.map(function([user, score], index) {
             return `${index === 0 ? "🥇 " : index === 1 ? "🥈 " : index === 2 ? "🥉 " : ""}${user} a ${score} point${score > 1 ? "s" : ""}.`;
-        }).join("\n");;
+        }).join("\n");
     }
 
     reset() {

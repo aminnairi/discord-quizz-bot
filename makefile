@@ -1,4 +1,4 @@
-.PHONY: env start clean
+.PHONY: env start clean test mrproper
 
 env:
 	docker-compose run --rm sh cp .env.example .env
@@ -11,6 +11,9 @@ start: node_modules
 
 clean:
 	docker-compose run --rm sh rm -rf node_modules
+
+test:
+	docker-compose run --rm npm test
 
 mrproper: clean
 	docker-compose run --rm sh rm -rf .env node_modules

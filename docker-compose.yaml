@@ -1,6 +1,14 @@
 version: "3"
 
 services:
+    node:
+        container_name: node
+        build:
+            context: docker/node
+            dockerfile: Dockerfile
+        volumes:
+            - .:/home/user/app
+
     npm:
         container_name: npm
         build:

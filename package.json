@@ -5,6 +5,7 @@
   "description": "Quizz bot",
   "main": "./src/main.js",
   "scripts": {
+    "test": "eslint src",
     "start": "node ./src/main.js"
   },
   "repository": {
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/aminnairi/quizz#readme",
   "devDependencies": {
     "discord.js": "^11.5.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "eslint": "^6.6.0"
   }
 }
