@@ -2,6 +2,8 @@
 
 Quizz bot
 
+[![Travis (.org) branch](https://img.shields.io/travis/aminnairi/discord-quizz-bot/latest)](https://travis-ci.org/aminnairi/discord-quizz-bot) [![Coveralls github branch](https://img.shields.io/coveralls/github/aminnairi/discord-quizz-bot/latest)](https://coveralls.io/github/aminnairi/discord-quizz-bot)
+
 ## Commands
 
 Command | Description
