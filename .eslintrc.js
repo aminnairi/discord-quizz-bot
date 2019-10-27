@@ -4,9 +4,13 @@ module.exports = {
         "es6": true,
         "node": true
     },
+    plugins: [
+        "mocha"
+    ],
     "extends": [
-      "eslint:recommended",
-      "plugin:json/recommended"
+        "eslint:recommended",
+        "plugin:json/recommended",
+        "plugin:mocha/recommended"
     ],
     "globals": {
         "Atomics": "readonly",

@@ -14,6 +14,14 @@ class QuestionAnswersMissingError extends Error {
     }
 }
 
+class QuestionAnswersEmptyError extends Error {
+    constructor(message) {
+        super(message);
+
+        this.name = "QuestionAnswersEmptyError";
+    }
+}
+
 class QuestionExplanationMissingError extends Error {
     constructor(message) {
         super(message);
@@ -64,6 +72,14 @@ class Question {
             throw new QuestionAnswersTypeError("The answers field must be an array.");
         }
 
+        if (answers.length === 0) {
+            throw new QuestionAnswersEmptyError("The answers property is empty.");
+        }
+
+        if (answers.some(answer => Object.prototype.toString.call(answer) !== "[object String]")) {
+            throw new QuestionAnswersTypeError("The answers field must be an array of strings.");
+        }
+
         if (!explanation) {
             throw new QuestionExplanationMissingError("The explanation property is mandatory.");
         }
@@ -100,4 +116,13 @@ class Question {
     }
 }
 
-module.exports = { Question };
+module.exports = {
+    Question,
+    QuestionTextMissingError,
+    QuestionTextTypeError,
+    QuestionAnswersMissingError,
+    QuestionAnswersEmptyError,
+    QuestionAnswersTypeError,
+    QuestionExplanationMissingError,
+    QuestionExplanationTypeError
+};

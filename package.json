@@ -5,7 +5,8 @@
   "description": "Quizz bot",
   "main": "./src/main.js",
   "scripts": {
-    "test": "eslint src/**/*.js src/**/*.json",
+    "test": "mocha",
+    "lint": "eslint src/**/*.js src/**/*.json test/**/*.js",
     "build": "rollup -c",
     "start": "node ./dist/main.js"
   },
@@ -30,8 +31,11 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.6.0",
     "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-mocha": "^6.2.0",
+    "mocha": "^6.2.2",
     "rollup": "^1.25.2",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
