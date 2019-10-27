@@ -1,7 +1,19 @@
 "use strict";
 
+class ScoresConstructorError extends Error {
+    constructor(message) {
+        super(message);
+
+        this.name = "ScoresConstructorError";
+    }
+}
+
 class Scores {
     constructor() {
+        if (arguments.length !== 0) {
+            throw new ScoresConstructorError("No arguments expected");
+        }
+
         this.scores = {};
     }
 
@@ -19,7 +31,7 @@ class Scores {
         });
 
         if (scores.length === 0) {
-            return "Il n'y a pas de scores encore enregistré. Faites une partie avec la commande `!quizz` !";
+            return "Il n'y a pas de scores encore enregistré. Fais une partie avec la commande `!quizz` !";
         }
 
         return scores.map(function([user, score], index) {
@@ -32,4 +44,7 @@ class Scores {
     }
 }
 
-module.exports = { Scores };
+module.exports = {
+    Scores,
+    ScoresConstructorError
+};
