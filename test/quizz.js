@@ -60,4 +60,22 @@ describe("quizz.js", function() {
         expect(quizz2.question).to.deep.equal(question1);
         expect(quizz2.hasSelectedQuestion()).to.be.true;
     });
+
+    it("It should reset the question properly.", function() {
+        const question = new Question({
+            text: "a",
+            answers: ["a"],
+            explanation: "a"
+        });
+
+        const quizz = new Quizz([ question ]);
+
+        quizz.selectQuestion();
+
+        expect(quizz.question).to.not.be.null;
+
+        quizz.resetQuestion();
+
+        expect(quizz.question).to.be.null;
+    });
 });
