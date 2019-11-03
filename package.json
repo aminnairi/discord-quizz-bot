@@ -5,8 +5,9 @@
   "description": "Quizz bot",
   "main": "./src/main.js",
   "scripts": {
+    "snyk": "snyk --dev test",
     "test": "nyc mocha",
-     "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint src/**/*.js src/**/*.json test/**/*.js",
     "build": "rollup -c",
     "start": "node ./dist/main.js"
@@ -43,6 +44,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^5.1.2"
+    "rollup-plugin-terser": "^5.1.2",
+    "snyk": "^1.241.0"
   }
 }

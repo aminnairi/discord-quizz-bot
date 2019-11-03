@@ -57,6 +57,20 @@ $ docker-compose run --rm npm install
 
 Automatic installation if the `node_modules` folder does not exist.
 
+### Vulnerability check
+
+#### [Docker Compose][Docker Compose]
+
+```console
+$ docker-compose run --rm npm run snyk
+```
+
+#### [GNU/Make][GNU/Make]
+
+```console
+$ make snyk
+```
+
 ### Linting
 
 #### [Docker Compose][Docker Compose]

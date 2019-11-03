@@ -1,4 +1,4 @@
-.PHONY: env start clean test lint build mrproper
+.PHONY: env start clean test lint build mrproper snyk
 
 env:
 	docker-compose run --rm sh cp .env.example .env
@@ -11,6 +11,9 @@ start: node_modules
 
 clean:
 	docker-compose run --rm sh rm -rf node_modules
+
+snyk:
+	docker-compose run --rm npm run snyk
 
 lint:
 	docker-compose run --rm npm run lint
