@@ -1,11 +1,3 @@
----
-name: Pull request template
-about: Propose changes the the current API
-title: ''
-assignees: aminnairi
-
----
-
 **Issue that this pull request is related**
 This will close #...
 This will fix #...
