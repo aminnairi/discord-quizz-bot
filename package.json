@@ -5,7 +5,7 @@
   "description": "Quizz bot",
   "main": "./src/main.js",
   "scripts": {
-    "snyk": "snyk --dev test",
+    "snyk": "snyk monitor --dev",
     "test": "nyc mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint src/**/*.js src/**/*.json test/**/*.js",
