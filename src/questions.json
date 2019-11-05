@@ -51,7 +51,7 @@
         "explanation": "Il est possible d'avoir plusieurs virgules à la suite pour avoir des cases d'un tableau non-définies. Cependant, pour des raisons de lisibilité, il est recommandé d'utiliser le mot-clé `undefined` à la place. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Types_et_grammaire#Les_virgules_suppl%C3%A9mentaires"
     },
     {
-        "text": "Combien de type de boucles existe-t-il en JavaScript ?",
+        "text": "Combien de type de boucles existe-t-il en JavaScript (en dehors des méthodes `Array.prototypes.*` ?",
         "answers": [
             "cinq",
             "5"
