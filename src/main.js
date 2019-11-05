@@ -21,15 +21,7 @@ client.on("message", function(message) {
     if (message.author.id !== client.user.id) {
         if (!quizz.hasSelectedQuestion()) {
             if (message.content === "!help") {
-                message.channel.send("Pour avoir de l'aide, tape `!help`.");
-                message.channel.send("Pour avoir de l'aide, tape `!scores`.");
-                message.channel.send("Pour réinitialiser les scores, tape `!reset`.");
-                message.channel.send("Pour que je pose une question, tape `!quizz`.");
-                message.channel.send("Pour arrêter une question en cours, tape `!stop`.");
-                message.channel.send("Pour demander la solution à une question en cours, tape `!ff`.");
-                message.channel.send("Pour reporter un problème, tape `!issue`.");
-                message.channel.send("Pour m'aider à m'améliorer, tape `!contribute`.");
-                message.reply("Amuse-toi bien ;)");
+                message.channel.send("Pour avoir de l'aide, tape `!help`.\nPour un résultat des scores, tape `!scores`.\nPour réinitialiser les scores, tape `!reset`.\nPour que je pose une question, tape `!quizz`.\nPour arrêter une question en cours, tape `!stop`.\nPour demander la solution à une question en cours, tape `!ff`.\nPour reporter un problème, tape `!issue`.\nPour m'aider à m'améliorer, tape `!contribute`.");
             }
 
             if (message.content === "!issue") {
