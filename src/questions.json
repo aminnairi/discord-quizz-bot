@@ -1,11 +1,11 @@
 [
     {
-        "text": "Combien y-a-til de manière de déclarer une variable ?",
+        "text": "Combien y-a-til de manière de déclarer une variable en JavaScript ?",
         "answers": [
             "3",
             "trois"
         ],
-        "explanation": "Il existe trois manières de déclarer une variable : avec le mot-clé `var`, `let` et `const`. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Types_et_grammaire#D%C3%A9clarations"
+        "explanation": "Il existe trois manières de déclarer une variable en JavaScript : avec le mot-clé `var`, `let` et `const`. Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Types_et_grammaire#D%C3%A9clarations"
     },
     {
         "text": "Quel est l'inventeur du langage JavaScript ?",
@@ -102,7 +102,7 @@
         "explanation": "La propriété `Array.prototype.length` est particulière car elle ne renvoit pas la taille réelle d'une tableau mais plutôt l'indice du plus grand élément d'un tableau plus un. Pour avoir sa taille rélle, l'astuce est de filtrer les éléments non-définis (`undefined`) et de calculer la taille du tableau ainsi filtré.\n```javascript\nconsole.log(brands.filter(Boolean).length); // 1\n```\n Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Collections_indexées#Comprendre_la_propriété_length"
     },
     {
-        "text": "Est-ce qu'il est possible d'avoir des données privées à un objet (ou une instance de classe) ?",
+        "text": "Est-ce qu'il est possible d'avoir des données privées à un objet (ou une instance de classe) en JavaScript ?",
         "answers": [
             "oui",
             "vrai"
@@ -117,7 +117,7 @@
         "explanation": "L'opérateur d'égalité entre deux objets ne compare pas le contenus des objets mais leur références. Tout objet, lorsqu'il est créé obtient une référence unique. La seule manière de faire marcher ce code est d'affecter à `motorcycle2` la référence de `motorcycle1` comme cela\n```javascript\nconst motorcycle2 = motorcycle1;\n```\nPlus d'infos ici https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Utiliser_les_objets#Comparer_des_objets"
     },
     {
-        "text": "Est-ce que Les promesses — ou *promises* en anglais — permettent de supprimer toutes les erreurs liées à l'éxécution d'une fonction ou d'une expression ?",
+        "text": "En JavaScript, est-ce que Les promesses — ou *promises* en anglais — permettent de supprimer toutes les erreurs liées à l'éxécution d'une fonction ou d'une expression ?",
         "answers": [
             "non",
             "faux"
@@ -197,7 +197,7 @@
         "explanation": "Aussi dingue que cela puisse paraître, il existe bel et bien un élément HTML qui permet d'offrir à l'utilisateur un color picker sans avoir besoin de le concevoir nous-mêmes (il est quand même bon de noter que ce dernier est assez sommaire en terme de fonctionnalités). Plus d'infos ici https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/color"
     },
     {
-        "text": "Je suis obligé de passer par un framework si je veux une liste déroulante composées d'entrées groupées par thèmes.",
+        "text": "Je suis obligé de passer par un framework JavaScript si je veux une liste déroulante composées d'entrées groupées par thèmes.",
         "answers": [
             "faux",
             "non"
@@ -249,7 +249,7 @@
             "oui",
             "vrai"
         ],
-        "explanation": "La fonction `in_array` revient à utiliser une boucle for pour itérer sur tous les éléments du tableau et de les comparer à notre paramètre de recherche. En PHP il est possible de comparer deux éléments de types différents mais de valeurs similaires. Plus d'infos ici https://www.php.net/manual/fr/language.operators.comparison.php"
+        "explanation": "En PHP, La fonction `in_array` revient à utiliser une boucle for pour itérer sur tous les éléments du tableau et de les comparer à notre paramètre de recherche. En PHP il est possible de comparer deux éléments de types différents mais de valeurs similaires. Plus d'infos ici https://www.php.net/manual/fr/language.operators.comparison.php"
     },
     {
         "text": "Quelle fonction PHP retourne le nombre de secondes écoulées depuis le 1er janvier 1970 ?",
